@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<head>
+    <meta charset='utf-8'>
+	<!--estructura del diseño del css-->
+		  <link type='text/css' rel='stylesheet' href='Travel_blog.css' />
+		  <!--titulo del encabezado de la pagina-->
+		<title>Blog de Carlos A. Rodriguez</title>
+	</head>
+	<body>
+		<div id='nav_bar'>
+			<div id='menu'>
+				 <!--barra de menú con su respectivo accso cuyas imagenes vienen invocadas del javascript-->
+				<li id='home'><a href='#'>Principal</a></li>
+				<li class='menu_button' id='iceland' data-location='iceland'><a href='#'>Islandia</a></li>
+				<li class='menu_button' id='indonesia' data-location='indonesia'><a href='#'>Indonesia</a></li>
+				<li class='menu_button' id='austria' data-location='austria'><a href='#'>Austria</a></li>
+				<li class='menu_button' id='nzaus' data-location='nzaus'><a href='#'>Oceania</a></li>
+			</div>
+		</div>
+		<div id='parallax_wrapper'>
+		<div class='parallax_image' id='parallax_image_iceland'>
+			<div class='menu_button parallax_link' data-location='iceland'><a href='#'>Islandia</a>
+			</div>
+		</div>
+		<div class='parallax_image' id='parallax_image_indonesia'>
+			<div class='menu_button parallax_link' data-location='indonesia'><a href='#'>Indonesia</a>
+			</div>
+		</div>
+		<div class='parallax_image' id='parallax_image_austria'>
+			<div class='menu_button parallax_link' data-location='austria'><a href='#'>Austria</a>
+			</div>
+		</div>
+		<div class='parallax_image' id='parallax_image_nzaus'>
+			<div class='menu_button parallax_link'  data-location='nzaus'><a href='#'>Oceania</a>
+			</div>
+		</div>
+		</div>
+		<div id='content'>
+			<div class='country_info' id='country_info_iceland'>
+				<h4 class='country'>Islandia
+				</h4>
+				<p>Islandia es un país insular nórdico en el Océano Atlántico Norte. Tiene una población de 332.529 y un área de 103.000 km2 (40.000 millas cuadradas), lo que lo convierte en el país menos poblado de Europa. La capital y ciudad más grande es Reykjavik. Reykjavík y las áreas circundantes en el suroeste del país albergan a más de dos tercios de la población. Islandia es activa volcánica y geológicamente. El interior consiste en una meseta caracterizada por campos de arena y lava, montañas y glaciares, mientras que muchos ríos glaciares desembocan en el mar a través de las tierras bajas. Islandia recibe su calor de la Corriente del Golfo y tiene un clima templado, a pesar de una latitud alta justo fuera del Círculo Polar Ártico. Su alta latitud y la influencia marina aún mantienen los veranos frescos, y la mayor parte del archipiélago tiene un clima de tundra.
+				</p>
+			</div>
+				<div class='country_info' id='country_info_indonesia'>
+				<h4 class='country'>Indonesia
+				</h4>
+				<p>Indonesia es un estado soberano unitario y un país transcontinental ubicado principalmente en el sudeste asiático con algunos territorios en Oceanía. Situado entre los océanos Índico y Pacífico, es el país insular más grande del mundo, con más de diecisiete mil islas. Con 1.904.569 kilómetros cuadrados (735.358 millas cuadradas), Indonesia es el decimocuarto país más grande del mundo en términos de área terrestre y el séptimo país más grande del mundo en términos de área combinada de mar y tierra. Tiene una población estimada de más de 260 millones de personas y es el cuarto país más poblado del mundo, la nación austronesia más poblada, así como el país de mayoría musulmana más poblado. La isla más poblada del mundo, Java, contiene más de la mitad de la población del país.
+				</p>
+			</div>
+			<div class='country_info' id='country_info_austria'>
+				<h4 class='country'>Austria
+				</h4>
+				<p>Austria es una república federal y un país sin salida al mar de más de 8,7 millones de personas en Europa Central. Limita con la República Checa y Alemania al norte, Hungría y Eslovaquia al este, Eslovenia e Italia al sur, y Suiza y Liechtenstein al oeste. El territorio de Austria cubre 83.879 km2 (32.386 millas cuadradas). El terreno es muy montañoso y se encuentra dentro de los Alpes; solo el 32% del país está por debajo de los 500 m (1640 pies) y su punto más alto es de 3798 m (12 461 pies). La mayoría de la población habla dialectos bávaros locales del alemán como idioma nativo, y el alemán austriaco en su forma estándar es el idioma oficial del país. Otros idiomas oficiales locales son el húngaro, el croata de Burgenland y el esloveno.
+				</p>
+			</div>
+			<div class='country_info' id='country_info_nzaus'>
+				<h4 class='country'>Nueva Zealandia & Australia
+				</h4>
+				<p>Nueva Zelanda es una nación ubicada en el suroeste del Océano Pacífico. El país comprende geográficamente dos masas de tierra principales: la Isla Norte (o Te Ika-a-Māui) y la Isla Sur (o Te Waipounamu), y alrededor de 600 islas más pequeñas. La variada topografía del país y sus afilados picos montañosos, como los Alpes del Sur, deben mucho al levantamiento tectónico de la tierra y las erupciones volcánicas. La capital de Nueva Zelanda es Wellington, mientras que su ciudad más poblada es Auckland.
+					<br>
+					<br>
+					Australia es un país que comprende la parte continental del continente australiano, la isla de Tasmania y numerosas islas más pequeñas. Es el sexto país más grande del mundo por área total. Los países vecinos son Papúa Nueva Guinea, Indonesia y Timor Oriental al norte; las Islas Salomón y Vanuatu al noreste; y Nueva Zelanda al sureste. La capital de Australia es Canberra, y su área urbana más grande es Sydney.
+				</p>
+			</div>
+			<!-- estructura de cuadrícula y fotos relevantes que se agregan a #grid según la matriz, en jscript-->
+			<div id='grid'>
+			</div>
+		</div>
+		<div id='grid_photo_big_wrapper'>
+		</div>
+		<!-- jscript-->
+		<script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+		<script src='Travel_blog.js'></script>
+  </body>
+</html>
